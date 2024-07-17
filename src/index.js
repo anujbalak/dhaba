@@ -1,3 +1,6 @@
+const home = require('./home.js')
+const menu = require('./menu.js')
+const about =  require('./about.js');
 
 import style from './style.css';
 // import spiraxWoff from './spirax-regular-webfont.woff';
@@ -17,16 +20,12 @@ btns.forEach(btn => {
     btn.addEventListener('click', () => {
         switch (btn) {
             case homeBtn:
-                const home = require('./home.js')
                 console.log('home');
                 break;
             case menuBtn:
-                remove(home);
-                const menu = require('./menu.js')
                 console.log('menu');
                 break;
             case aboutBtn:
-                const about =  require('./about.js');
                 console.log('about');
             default:
                 console.log('home');
